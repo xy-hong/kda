@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class IndexController {
 
-    @Value("${chinese.name}")
+    @Value("${personal.name}")
     private String name;
 
-    @GetMapping("/config")
+    @GetMapping("/personal")
     public String echoConfig(){
-        return "chinese name is " + name;
+        return "My name is " + name;
     }
 
 }

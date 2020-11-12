@@ -22,8 +22,8 @@ public class IndexController {
     @Value("${spring.application.name}")
     private String appName;
 
-    @Value("${chinese.name}")
-    private String chineseName;
+    @Value("${personal.name}")
+    private String name;
 
 
 
@@ -32,9 +32,9 @@ public class IndexController {
         return "Hello " + word + ", This is " + appName;
     }
 
-    @GetMapping("/config")
+    @GetMapping("/personal")
     public String echoConfig(){
-        return "user name is " + chineseName;
+        return "My name is " + name;
     }
 
 }
