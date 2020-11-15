@@ -8,6 +8,7 @@ class AkaliApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("输出");
     }
 
 }
